@@ -251,6 +251,56 @@
   color: var(--bg);
 }
 
+
+/* home - brands section */
+.brands {
+  margin-top: 3em;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1em 0 1em;
+  text-align: center;
+}
+
+.brands-header h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.2;
+}
+
+/* home - album slider */
+.album-slider {
+  overflow: hidden;
+  padding: 4em 0;
+}
+
+.album-slider .slider-track {
+  display: flex;
+  gap: 24px;
+  animation: album-scroll 20s linear infinite;
+}
+
+.album-slider:hover .slider-track {
+  animation-duration: 100s; /* slow on hover */
+}
+
+.album-slider img {
+  width: 120px;
+  aspect-ratio: 1/1;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+@keyframes album-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 @media (max-width: 1000px) {
   .hero .hero-footer .hero-footer-symbols {
     display: none;
