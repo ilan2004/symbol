@@ -278,11 +278,7 @@
 .album-slider .slider-track {
   display: flex;
   gap: 24px;
-  animation: album-scroll 20s linear infinite;
-}
-
-.album-slider:hover .slider-track {
-  animation-duration: 100s; /* slow on hover */
+  /* Animation handled by JavaScript for better control */
 }
 
 .album-slider img {
